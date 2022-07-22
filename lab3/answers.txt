@@ -1,0 +1,8 @@
+sort1 uses: Bubble Sort
+How do you know?: because S1 in sorted data was significantly faster than S3 but in random and reverse data not. (sorted data is required for bubble search)
+
+sort2 uses: Merge Sort
+How do you know?: Because Merge Sort is much faster than other methods and S2 in most of random, reverse and sorted data had better performance than others.
+
+sort3 uses: Selection Sort
+How do you know?: Because Selection sort in both worst and best scenario should search n**2 and it could be considered as a slowest method.
