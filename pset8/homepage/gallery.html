@@ -1,0 +1,44 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="shakeimg.js"></script>
+    <title>Image Gallery - PreSchool Activities</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="hero">
+<a href="index.html"><img src="images/home.png" width=40 height=40></a>
+    <div class="full-img" id="fullImgBox">
+        <img src="images/pic1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="images/pic1.jpg" onclick="openFullImg(this.src)">
+        <img src="images/pic2.jpg" onclick="openFullImg(this.src)">
+        <img src="images/pic3.jpg" onclick="openFullImg(this.src)">
+        <img src="images/pic4.jpg" onclick="openFullImg(this.src)">
+        <img src="images/pic5.jpg" onclick="openFullImg(this.src)">
+        <img src="images/pic6.jpg" onclick="openFullImg(this.src)">
+        <img src="images/pic7.jpg" onclick="openFullImg(this.src)">
+        <img src="images/pic8.jpg" onclick="openFullImg(this.src)">
+    </div>
+</div>
+<script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
